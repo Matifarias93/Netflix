@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Link a mi CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Link a Icos Font-Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Netflix</title>
+    <link rel="icon" type="image/x-icon" href="img/N.png">
+</head>
+<body>
+    <main>
+        <header class="header-container">
+            <a href="" class="logo-netflix"><img src="img/netflix.png" alt="Logo Netflix"></a>
+            <ul class="header-nav">
+                <li><a href="" class="items-nav">Home</a></li>
+                <li><a href="" class="items-nav">Series</a></li>
+                <li><a href="" class="items-nav">Movies</a></li>
+                <li><a href="" class="items-nav">Latest</a></li>
+                <li><a href="" class="items-nav">My List</a></li>
+            </ul>
+            <div class="header-profile">
+                <input type="text" placeholder="Search" class="search">
+                <a href="" onclick="alert('Don´t have any notification')"><i class="fa-sharp fa-solid fa-bell"></i></a>
+                <a href="" onclick="alert('It´s your User Profile')"><i class="fa-sharp fa-solid fa-circle-user"></i></a>
+            </div>
+        </header>
+        <section class="section-container">
+            <img class="banner" src="img/bannerfondo2.jpg" alt="Peaky Blinders Background">
+            <span class="sombra-banner"></span>
+            <div class="first-container">
+                <div class="primer-linea">
+                    <img class="logo-n" src="img/N.png" alt="Letra N">
+                    <h3 class="serie">SERIE</h3> 
+                </div>           
+                <img class="logo-title" src="img/peakyblinders.png" alt="Peaky Blinders title">    
+                <h4 class="recomendacion">97% for you</h4>
+                <div class="info">
+                    <h4>2022</h4>
+                    <h4><i>16+</i></h4>
+                    <h4>6 seasons</h4>
+                    <h4>HD</h4>
+                </div>
+                <div class="ranking"> 
+                    <img src="img/top10.png" alt="top 10 titles" class="top10">
+                    <h3 class="serieshoy">N°1 en SERIES hoy</h3> 
+                </div>
+                <p>In Britain, United Kingdom, people are recovering from the despair of the Great War. It is precisely here that a family of Irish gangsters of nomadic origin settled in Birmingham (the Peaky Blinders) run a horse betting joint in the city. The actions of the ambitious, respected, reckless and dangerous gang leader, Thomas Shelby, attract the attention of Chief Inspector Chester Campbell, a detective of the Royal Irish Constabulary who is sent to clean up the city from the Irish Republican Army (IRA), communists, gangs and common criminals.</p>
+                <div class="actions"> 
+                    <a href="" class="play">Play</a>
+                    <a href="" class="icons" onclick="alert('Added to your list !')"><i class="fa-sharp fa-solid fa-plus"></i></a>
+                    <a href="" class="icons" onclick="alert('You like this title !')"><i class="fa-sharp fa-solid fa-thumbs-up"></i></a>
+                </div>
+                <div class="linktrailer">
+                    <a href="" onclick="toggleVideo();"><i class="fa-sharp fa-solid fa-circle-play"></i></a>
+                    <a href="" onclick="toggleVideo();"><p class="watchtrailer">Watch Trailer<p></a>
+                </div>   
+            </div>
+        </section>
+        <section class="trailer">
+            <video src="img/trailer.mp4" controls="true"></video>
+            <img src="img/cruz.png" class="close" onclick="toggleVideo();">
+        </section>
+    </main>  
+    <script src="reproductor.js"></script>  
+</body>
+</html>
